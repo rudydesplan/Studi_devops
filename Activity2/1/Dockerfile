@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Création du répertoire de travail dans le conteneur
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copie des fichiers de dépendances
 COPY package.json .
