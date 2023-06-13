@@ -7,6 +7,7 @@ If you don't, follow the installation instructions for your specific operating s
 ## 2 Create a new directory for your Terraform files.
 
 `mkdir terraform-minikube`
+
 `cd terraform-minikube`
 
 ## 3 Create a Terraform configuration file (`main.tf`)
