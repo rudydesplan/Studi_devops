@@ -14,6 +14,7 @@ provider "local" {
   version = "~> 2.4.0"
 }
 `
+
 In this block, we declare a local provider, which is used for local operations like executing shell scripts or commands.
 
 The version attribute specifies the version of the provider to be used.
