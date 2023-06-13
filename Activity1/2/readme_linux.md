@@ -2,7 +2,7 @@
 
 This README explains the Terraform configuration for setting up a Kubernetes secret that holds database credentials.
 
-##Terraform Configuration File
+## Terraform Configuration File
 
 The `db_config_linux.tf` file contains the configuration for creating a Kubernetes secret.
 
