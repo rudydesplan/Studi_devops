@@ -17,9 +17,11 @@ If you don't, follow the installation instructions for your specific operating s
 ## 4 Initialize Terraform.
 
 Run the following command:
+
 `terraform init`
 
 ## 5 Apply the Terraform configuration.
 
 Run the following command:
+
 `terraform apply`
