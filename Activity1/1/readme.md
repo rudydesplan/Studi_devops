@@ -15,7 +15,9 @@ provider "local" {
 }
 `
 In this block, we declare a local provider, which is used for local operations like executing shell scripts or commands.
+
 The version attribute specifies the version of the provider to be used.
+
 In this case, we're targeting any version in the 2.4.x series.
 
 #### Resource
