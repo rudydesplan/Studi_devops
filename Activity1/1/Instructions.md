@@ -10,7 +10,9 @@ If you don't, follow the installation instructions for your specific operating s
 
 `cd terraform-minikube`
 
-## 3 Create a Terraform configuration file (`main.tf`)
+## 3 Create a Terraform configuration file
+
+`main.tf`
 
 ## 4 Initialize Terraform.
 
