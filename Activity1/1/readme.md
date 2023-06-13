@@ -34,9 +34,13 @@ This block declares a local_exec resource, which represents a command executed o
 
 The command attribute specifies the actual command to be executed.
 
-Here, we're running minikube start --vm-driver=none, which starts a Minikube cluster with the none VM driver.
+#### Linux version
 
-The none driver runs the Kubernetes components on the host and not in a VM, so it requires a Linux host and cannot be used on a Windows or a Mac host.
+Here, we're running minikube start --vm-driver=none.
+
+This will starts a Minikube cluster with the none VM driver.
+
+The none driver runs the Kubernetes components on the host and not in a VM, so it requires a Linux host machine.
 
 ### Characteristics of the Cluster and Node
 
