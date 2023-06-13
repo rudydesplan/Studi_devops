@@ -16,13 +16,19 @@ If you don't, follow the installation instructions for your specific operating s
 
 `main.tf`
 
-## 4 Initialize Terraform.
+## 4 Initializing Terraform.
 
 Run the following command:
 
 `terraform init`
 
-## 5 Apply the Terraform configuration.
+## 5 Terraform plan
+
+Run the following command:
+
+`terraform plan`
+
+## 6 Apply the Terraform configuration.
 
 Run the following command:
 
