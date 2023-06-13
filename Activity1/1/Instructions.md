@@ -1,6 +1,6 @@
 ## 1 Install Minikube and Terraform. 
 
-Make sure you have both Minikube and Terraform installed on your machine.
+Make sure you have both Minikube and Terraform installed on your machine and an hypervisor - like hyperV if you are using windows
 
 If you don't, follow the installation instructions for your specific operating system.
 
