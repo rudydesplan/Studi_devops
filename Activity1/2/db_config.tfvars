@@ -1,0 +1,5 @@
+db_host = "dpg-ci45mrliuie031g7mung-a"
+db_port = "5432"
+db_name = "studi"
+db_user = "studi"
+db_pass = "QDMumdIe37s4NJ4H94WelWLalKzJQ9dF"
