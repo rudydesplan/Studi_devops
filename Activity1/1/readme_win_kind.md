@@ -9,7 +9,7 @@ The main.tf file contains the configuration for setting up a Kind cluster.
 ### Explanation
 
 #### Provider
-`
+```
 terraform {
   required_providers {
     kind = {
@@ -18,18 +18,18 @@ terraform {
     }
   }
 }
-`
+```
 
 In this block, we're defining the providers that our Terraform configuration will rely on.
 
 We're requiring the kind provider, sourced from "tehcyx/kind", and specifying that we need version "0.1.1".
 
 #### Provider Block
-`
+```
 provider "kind" {
   #Configuration options
 }
-`
+```
 
 This block is where we'd configure the kind provider. 
 
@@ -37,11 +37,11 @@ At the moment, no configuration options are specified.
 
 #### Resource Block
 
-`
+```
 resource "kind_cluster" "default" {
     name = "test-cluster"
 }
-`
+```
 
 Here, we're defining a kind_cluster resource, which represents a kind cluster.
 
