@@ -1,3 +1,9 @@
+variable "db_host" {}
+variable "db_port" {}
+variable "db_name" {}
+variable "db_user" {}
+variable "db_pass" {}
+
 # Kubernetes provider to manage kubernetes resources
 provider "kubernetes" {
   config_path = "~/.kube/config"
@@ -10,10 +16,10 @@ resource "kubernetes_secret" "db_credentials" {
   }
 
   data = {
-    HOST     = base64encode("dpg-ci45mrliuie031g7mung-a")
-    PORT     = base64encode("5432")
-    DATABASE = base64encode("studi")
-    USERNAME = base64encode("studi")
-    PASSWORD = base64encode("QDMumdIe37s4NJ4H94WelWLalKzJQ9dF")
+    HOST     = base64encode(var.db_host)
+    PORT     = base64encode(var.db_port)
+    DATABASE = base64encode(var.db_name)
+    USERNAME = base64encode(var.db_user)
+    PASSWORD = base64encode(var.db_pass)
   }
 }
