@@ -9,11 +9,11 @@ The main.tf file contains the configuration for setting up a Minikube cluster.
 ### Explanation
 
 #### Provider
-`
+```
 provider "local" {
   version = "~> 2.4.0"
 }
-`
+```
 
 In this block, we declare a local provider, which is used for local operations like executing shell scripts or commands.
 
@@ -22,13 +22,13 @@ The version attribute specifies the version of the provider to be used.
 In this case, we're targeting any version in the 2.4.x series.
 
 #### Resource
-`
+```
 resource "local_exec" "install_minikube" {
   command = <<-EOF
     minikube start --vm-driver=none
   EOF
 }
-`
+```
 
 This block declares a local_exec resource, which represents a command executed on the local machine.
 
