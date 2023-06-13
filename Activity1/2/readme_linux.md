@@ -17,7 +17,9 @@ variable "db_user" {}
 variable "db_pass" {}
 ```
 
-In this block, we declare several Terraform variables. These are used to hold the database credentials that will be stored in the Kubernetes secret.
+In this block, we declare several Terraform variables. 
+
+These are used to hold the database credentials that will be stored in the Kubernetes secret.
 
 ### Provider
 ```
