@@ -2,19 +2,19 @@
 FROM node:latest
 
 # Création du répertoire de travail dans le conteneur
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copie des fichiers de dépendances
-COPY package.json .
+COPY ./app/package*.json ./
 
 # Installation des dépendances
 RUN npm install
 
 # Copie des autres fichiers de l'application et des vues
-COPY . .
+COPY ./app .
 
 # Exposition du port 3000
 EXPOSE 3000
 
-# Commande pour démarrer l'application
-CMD [ "node", "app.js" ]
+# Start the application
+CMD [ "npm", "start" ]
