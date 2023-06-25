@@ -40,7 +40,8 @@ After building the image, you can run a container from the image using the follo
 
 `docker run -p 3000:3000 -d hello_world_app` .
 
-This command runs the Docker container in detached mode (-d) and maps port 3000 in the container to port 3000 on your host machine (-p 3000:3000).
+This command runs the Docker container in detached mode (-d) 
+and maps port 3000 in the container to port 3000 on your host machine (-p 3000:3000).
 
 ## How to Access
 
