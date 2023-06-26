@@ -1,5 +1,5 @@
-# Activité Type 2 : Déploiement d’une application en continu
+# Activity Type 2: Continuous Application Deployment
 
-## I - Créez une application Nodejs (hello word) à partir d’une image docker Nodejs que vous exposerez sur un port (de votre choix)  / Dockerizez votre application Nodejs   
+## I - Create a Node.js application (hello world) from a Node.js Docker image that you will expose on a port (of your choice) / Dockerize your Node.js application.
 
-## II - Écrivez le script qui build/test et le nodejs et déployez le sur le kube créé
+## II - Write the script to build/test the Node.js application and deploy it on the created Kubernetes cluster.
