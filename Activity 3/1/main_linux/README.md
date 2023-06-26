@@ -8,8 +8,8 @@ Option 2: Deploy a standalone Elasticsearch cluster.
 
 You manually deploy and manage a standalone Elasticsearch cluster.
 
-## I - Manual Deployment Using Kubernetes Manifests: 
-This involves writing Kubernetes manifest files (YAML or JSON) for Elasticsearch and using kubectl apply to create the resources.
+## I - Deployment Using Kubernetes Manifests: 
+This involves using Kubernetes manifest files (YAML ) for Elasticsearch and using kubectl apply to create the resources.
 
 ## II - Helm Chart: 
 Helm is a package manager for Kubernetes, and Elasticsearch has an official Helm chart.
