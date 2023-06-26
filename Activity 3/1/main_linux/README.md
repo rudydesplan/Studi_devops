@@ -1,10 +1,12 @@
 # How to set up Elasticsearch and connect it with your Kubernetes cluster
 
-Option 1: Deploy ECK (Elasticsearch Operator) in your Kubernetes cluster
+Option 1: Deploy ECK (Elasticsearch Operator) in your Kubernetes cluster.
+
 ECK is an open-source operator provided by Elastic, the company behind Elasticsearch. It simplifies the deployment and management of Elasticsearch clusters on Kubernetes.
 
-Option 2: Deploy a standalone Elasticsearch cluster
-In this option, you manually deploy and manage a standalone Elasticsearch cluster.
+Option 2: Deploy a standalone Elasticsearch cluster.
+
+You manually deploy and manage a standalone Elasticsearch cluster.
 
 ## I - Manual Deployment Using Kubernetes Manifests: 
 This involves writing Kubernetes manifest files (YAML or JSON) for Elasticsearch and using kubectl apply to create the resources.
