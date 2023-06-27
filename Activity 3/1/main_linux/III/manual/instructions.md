@@ -31,6 +31,23 @@ Run the command :
 
 ## Test your Elasticsearch
 
-Get the Elasticsearch service URL with the command:
+### A - you can access your service using the minikube service command
 
-`kubectl get svc -n elasticsearch`  and try accessing it with curl.
+`minikube service elasticsearch --namespace=elasticsearch`
+
+This will open a web browser with your service. 
+
+### B - using curl 
+
+First You can get the IP address of your Minikube node with the following command:
+
+`minikube ip`
+
+Then the curl command 
+
+`curl http://<MINIKUBE-IP>:30000`
+
+Youu should receive a JSON response from the Elasticsearch server containing some basic information about the server, including the Elasticsearch version number.
+
+
+
