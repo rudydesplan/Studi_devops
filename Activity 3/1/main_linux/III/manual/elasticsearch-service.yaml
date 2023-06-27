@@ -10,4 +10,5 @@ spec:
     - protocol: TCP
       port: 9200
       targetPort: 9200
-  type: LoadBalancer
+      nodePort: 30000  # Adjust this as needed, can be any valid unused port in the 30000-32767 range.
+  type: NodePort
