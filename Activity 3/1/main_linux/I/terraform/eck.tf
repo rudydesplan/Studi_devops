@@ -7,3 +7,24 @@ resource "null_resource" "install_eck" {
     EOF
   }
 }
+
+resource "local_exec" "deploy_elasticsearch" {
+  command = <<-EOF
+    cat <<EOF | kubectl apply -f -
+    apiVersion: elasticsearch.k8s.elastic.co/v1
+    kind: Elasticsearch
+    metadata:
+      name: elasticsearch
+    spec:
+      version: 8.8.1
+      nodeSets:
+      - name: default
+        count: 1
+        config:
+          node.master: true
+          node.data: true
+          node.ingest: true
+          node.store.allow_mmap: false
+    EOF
+  EOF
+}
