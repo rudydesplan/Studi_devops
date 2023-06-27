@@ -7,7 +7,7 @@ Ensure that your Kubernetes cluster is up and running and that you have the kube
 ## Create Elasticsearch Docker Image
 
 Run the command : 
-`docker pull elasticsearch`
+`docker pull elasticsearch:8.8.1`
 
 ## Create a Namespace
 It's a good practice to create a new namespace for the Elasticsearch installation for logical separation in Kubernetes.
