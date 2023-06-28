@@ -1,20 +1,20 @@
-# Définition de l'image de base
+# Base image definition
 FROM node:latest
 
-# Création du répertoire de travail dans le conteneur
+# Creating the working directory inside the container
 WORKDIR /app
 
-# Copie des fichiers de dépendances
+# Copying dependency files
 COPY ./app/package*.json ./
 
-# Installation des dépendances
+# Installing dependencies
 RUN npm install
 
-# Copie des autres fichiers de l'application et des vues
+# Copying other application files and views
 COPY ./app .
 
-# Exposition du port 3000
+# Exposing port 3000
 EXPOSE 3000
 
 # Start the application
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]
