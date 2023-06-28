@@ -18,3 +18,11 @@ Run the following command to update the Helm repositories:
 ## 4 - Install Elasticsearch using Helm
 
 `helm install elasticsearch elastic/elasticsearch`
+
+## 5 - Accessing Elasticsearch
+
+Check the Elasticsearch service using the following command:
+
+`kubectl get svc`
+
+This should display the Elasticsearch service and its external IP address.
