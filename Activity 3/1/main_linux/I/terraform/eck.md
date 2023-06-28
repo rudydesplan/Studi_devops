@@ -48,9 +48,11 @@ and the actual state in your cloud provider (Minikube in your case).
 
 To access this service from your local machine, you can use port forwarding with kubectl.
 Here's how to do it:
+
 `kubectl port-forward service/elasticsearch-es-http 9200`
 
 Then, you can access Elasticsearch at http://localhost:9200. 
 
 If you're using minikube, you can also use the minikube service command to access services:
+
 `minikube service elasticsearch-es-http`
